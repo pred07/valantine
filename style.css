@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+body {
+  background-color: rgba(234, 177, 177, 0.864);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+body .drawBox {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: 330px;
+  max-width: 330px;
+}
+body .drawBox .smallHearts {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+body .drawBox .smallHearts .smallHeart {
+  background-image: url('smallheart.png');
+  background-size: 100%;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  opacity: 0;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(1) {
+  left: 23%;
+  top: 72%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(2) {
+  left: -3%;
+  top: 58%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(3) {
+  left: 6%;
+  top: 40%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(4) {
+  left: 1%;
+  top: 20%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(5) {
+  left: 10%;
+  top: 2%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(6) {
+  left: 35%;
+  top: -4%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(7) {
+  left: 50%;
+  top: 5%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(8) {
+  left: 78%;
+  top: 0%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(9) {
+  left: 94%;
+  top: 15%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(10) {
+  left: 92%;
+  top: 34%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(11) {
+  left: 98%;
+  top: 50%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(12) {
+  left: 78%;
+  top: 60%;
+}
+body .drawBox .smallHearts .smallHeart:nth-child(13) {
+  left: 65%;
+  top: 76%;
+}
+body .mainHeart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .mainHeart svg {
+  margin-top: 0%;
+  width: 82%;
+}
+body .mainHeart svg .drawHeart {
+  fill: none;
+  stroke: #d63b3b;
+  stroke-linejoin: bevel;
+  stroke-width: 3px;
+  stroke-dasharray: 1867.0498046875;
+  stroke-dashoffset: 1867.0498046875;
+  -webkit-animation: draw 3s linear 0.5s forwards;
+          animation: draw 3s linear 0.5s forwards;
+}
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+body .greeting {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 45px;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+body .greeting .s {
+  display: table-cell;
+  padding: 0 1px;
+  opacity: 0;
+}
+body .greeting .s.space {
+  padding-left: 7px;
+}
+body .greeting .s.squeeze {
+  margin-left: -2px;
+}
